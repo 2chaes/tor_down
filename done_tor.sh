@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# 전달받은 TOR_ID 이용해서 시드 제거
 # 'transmission 주소:port -n id:passwd' 형식으로 작성
 SERVER=''
 transmission-remote $SERVER -t $TR_TORRENT_ID -r
