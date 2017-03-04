@@ -76,7 +76,8 @@ tor_addr='Your_transmission_address'
 tor_user='Your_transmission_id'
 tor_passwd='Your_transmission_passwd'
 
-# 반복횟수, 검색주기 설정 (단위: 초)
+# 화질, 반복횟수, 검색주기 설정 (단위: 초)
+pq='720'
 loop_num=60
 loop_delay=300
 
@@ -93,10 +94,10 @@ for i in sys.argv[1:-1]:
     dname+=i+" "
 
 if sys.argv[-1] == "0":
-    dname=d.strftime('%y%m%d')+dname+'720'
+    dname=d.strftime('%y%m%d')+dname+pq
 elif sys.argv[-1] == "1":
     d=d-datetime.timedelta(1)
-    dname=d.strftime('%y%m%d')+dname+'720'
+    dname=d.strftime('%y%m%d')+dname+pq
 else:
     ban_option=0
     loop_num=1
