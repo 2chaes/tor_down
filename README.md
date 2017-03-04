@@ -63,7 +63,7 @@ $ /SCRIPT/PATH/tordown.py Weekly Idol
 10 23 * * 3,4 /SCRIPT/PATH/tordown.py ABC drama 0
 ```
 
-* 'My Little TV' 라는 프로그램은 일요일 0시 45분에 끝난다.
+* 'My Little TV' 라는 프로그램은 일요일 0시 45분에 끝난다. </br>
    다음날 프로그램이 종료되는 경우에는 1 옵션을 이용해서 걸어두면 됩니다.
 ```
 # 옵션 1을 이용해서 어제날짜(170303)를 추가한다.
