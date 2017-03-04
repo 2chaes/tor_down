@@ -39,7 +39,7 @@ tordown.py 검색어 [Option] 의 형태로 사용하시면 됩니다.
 * tor_addr='Your_transmission_address'
 * tor_user='Your_transmission_id'
 * tor_passwd='Your_transmission_passwd'
-</br>
+
 #### 수정가능한 변수들
 * 'loop_num'은 검색이 성공할때까지 반복하는 횟수를 뜻합니다.
 * 'loop_delay'는 검색이 실패했을때 다음검색 요청까지 기다리는 시간을 뜻합니다. (단위 : 초)
