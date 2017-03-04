@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#-*- coding: utf-8 -*-
 
 import re
 import os, sys, subprocess
@@ -21,7 +20,6 @@ def Ban_Check():
         # 불량 파일인지 아닌지 검사함.
         if ban_option:
             per=0
-
 
             # 최대 5분동안 15% 다운되길 기다림.
             for j in range(0,20):
@@ -66,6 +64,7 @@ if len(sys.argv) <= 1:
     print("검색어를 입력하세요!")
     exit()
 
+# dname: 검색어
 dname=' '
 ban_list=[]
 ban_option=1
@@ -82,8 +81,15 @@ loop_num=60
 loop_delay=300
 
 # transmission 호출
-tc=transmissionrpc.Client(address=tor_addr, user=tor_user, password=tor_passwd)
-tor_path=tc.get_session().download_dir + '/'
+try:
+    tc=transmissionrpc.Client(address=tor_addr, user=tor_user, password=tor_passwd)
+    tor_path=tc.get_session().download_dir + '/'
+except:
+    print("ERROR: transmission 설정을 확인하세요. 아래 변수가 올바른지 확인하세요.")
+    print("# transmission 주소\n tor_addr = {0}".format(tor_addr))
+    print("# transmission ID  \n tor_user = {0}".format(tor_user))
+    print("# transmission PWD \n tor_passwd = {0}".format(tor_passwd))
+    exit()
 
 
 # 파라미터로 검색어 가공
