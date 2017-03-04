@@ -70,3 +70,38 @@ $ /SCRIPT/PATH/tordown.py Weekly Idol
 # "170303 My Little TV $화질" 로 검색을 시도한다.
 45 0 * * 7 /SCRIPT/PATH/tordown.py My Little TV 1
 ```
+
+#### crontab 등록 예시
+```
+### 월요일 ###
+# Non Summit
+40 0 * * 2  /SCRIPT/PATH/tordown.py Non Summit 1
+
+### 수요일 ###
+# Weekly Idol
+15 19 * * 3 /SCRIPT/PATH/tordown.py Weekly Idol 0
+# Radio Star
+50 0 * * 4  /SCRIPT/PATH/tordown.py Radio Star 1
+
+### 목요일 ###
+# Happy Together
+50 0 * * 5  /SCRIPT/PATH/tordown.py Happy Together 1
+
+### 금요일 ###
+# Music Bank
+45 18 * * 5 /SCRIPT/PATH/tordown.py Music Bank 0
+# Single Life
+50 0 * * 6  /SCRIPT/PATH/tordown.py Single Life 1
+
+### 토요일 ###
+# We Got Married
+35 18 * * 6 /SCRIPT/PATH/tordown.py We Got Married 0
+# My Little TV
+0 1 * * 7   /SCRIPT/PATH/tordown.py My Little TV 1
+
+### 일요일 ###
+# Running Man
+15 20 * * 7 /SCRIPT/PATH/tordown.py Running Man 0
+# Hot Brain
+45 0 * * 1  /SCRIPT/PATH/tordown.py Hot Brain 1
+```
