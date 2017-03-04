@@ -3,12 +3,12 @@
 파이썬으로 만들어진 토렌트 다운로드 스크립트입니다. <br/>
 광고문구가 포함된 영상을 걸러내는 기능을 추가했습니다.
 
-### Pre-requisites
+## Pre-requisites
 
 OS : Ubuntu/Debian <br/>
 Python Version >= 3.4
 
-### Installation
+## Installation
 
 * Transmission 설치
 
@@ -26,11 +26,11 @@ $ sudo pip3 install bs4
 $ sudo pip3 install transmissionrpc
 ```
 
-### Usage
+## Usage
 
 tordown.py 검색어 [Option] 의 형태로 사용하시면 됩니다.
 
-#### Option
+### Option
 * option이 0인경우 오늘자 날짜를 추가해서 가장 먼저 올라온 파일 다운로드 요청.
 * option이 1인경우 어제자 날짜를 추가해서 가장 먼저 올라온 파일 다운로드 요청.
 * option이 0이나 1이 아닌 경우 검색어 중 가장 나중에 올라온 파일 다운로드 요청.
@@ -47,7 +47,7 @@ tordown.py 검색어 [Option] 의 형태로 사용하시면 됩니다.
   해당부분을 '360', '720', '1080' 으로 수정할수 있습니다. </br>
   '' 으로 수정한다면 화질 상관없이 검색합니다.
 
-### Example
+## Example
 #### 1. 터미널에서 바로 다운로드를 요청할때 사용합니다.
 * 터미널에서 바로 'Weekly Idol' 이라는 프로그램을 다운로드 요청할때 아래와 같이 사용합니다.
 ```
